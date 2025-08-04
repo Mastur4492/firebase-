@@ -1,0 +1,287 @@
+/* Basic styling for the app */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav.app-nav {
+  margin-bottom: 20px;
+}
+
+button.nav-btn {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #282c34;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.nav-btn.active {
+  background-color: #21a1f3;
+}
+
+button.nav-btn:hover {
+  background-color: #21a1f3;
+}
+
+section.upload-section,
+section.search-section,
+section.manage-section {
+  margin-bottom: 20px;
+}
+
+.file-upload-container,
+.search-container,
+.file-list-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload-container form,
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.file-input,
+.text-input,
+.textarea-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.textarea-input {
+  resize: vertical;
+}
+
+button.submit-btn,
+button.clear-error-btn {
+  align-self: flex-start;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.submit-btn:hover,
+button.clear-error-btn:hover {
+  background-color: #444;
+}
+
+.loading-indicator {
+  text-align: left;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+}
+
+.file-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.file-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.file-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-info {
+  padding: 10px;
+  background-color: white;
+  text-align: left;
+}
+
+.file-name {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.file-details {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.file-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.no-files {
+  text-align: center;
+}
+
+.upload-section img,
+.file-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.description-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.save-btn,
+.cancel-btn,
+.edit-description-btn {
+  background-color: #61dafb;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-btn:hover,
+.cancel-btn:hover,
+.edit-description-btn:hover {
+  background-color: #21a1f3;
+}
+
+.app-footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  border-radius: 8px;
+}
+
+.search-form .search-inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-field-group,
+.search-type-group {
+  flex-grow: 1;
+  flex-basis: 150px;
+}
+
+.search-button-group {
+  display: flex;
+  gap: 5px;
+}
+
+.search-btn,
+.clear-search-btn {
+  background-color: #61dafb;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-btn:hover,
+.clear-search-btn:hover {
+  background-color: #21a1f3;
+}
+
+.search-results {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.result-view-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.result-view-btn:hover {
+  background-color: #388e3c;
+}
